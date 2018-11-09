@@ -14,5 +14,3 @@ sass:
   style: compressed
 include:
 - _pages
-gdrive:
-  sheet: Video Uploads
