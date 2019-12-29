@@ -1,7 +1,9 @@
-{% if include.videoType == 'youtube' %}
-  <iframe src="https://www.youtube.com/embed/{{ include.videoID }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-{% endif %}
+<div class="video-wrapper">
+  {% if include.videoType == 'youtube' %}
+    <iframe src="https://www.youtube.com/embed/{{ include.videoID }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  {% endif %}
 
-{% if include.videoType == 'vimeo' %}
-  <iframe src="https://player.vimeo.com/video/{{ include.videoID }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-{% endif %}
+  {% if include.videoType == 'vimeo' %}
+    <iframe src="https://player.vimeo.com/video/{{ include.videoID }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  {% endif %}
+</div>

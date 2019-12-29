@@ -4,13 +4,7 @@ $( "#nav-toggle" ).click(function() {
   $( "body" ).toggleClass( "nav-open" );
 });
 
-if($('.fluid-video').length >0 ){
-    $(".fluid-video").fitVids({
-      customSelector: 'iframe[src*="facebook"]'
-  });
-}
-
-if($('.quote-rotator').length >0 ){
+if($('.quote-rotator').length > 0 ){
   var slideIndex = 0;
   carousel();
 
