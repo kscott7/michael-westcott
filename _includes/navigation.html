@@ -4,15 +4,17 @@
   <a href="/" class="mw-branding mw-branding-desktop"><img src="{{ siteurl }}/static/images/mw-logo.png" alt="Michael Westcott Home Page"></a>
   <label class="mw-navicon" for="nav-toggle">Menu</label>
   <div class="mw-navigation-wrapper">
-    <ul class="mw-navigation">
-      {% for item in site.data.navigation.links %}
-        <li>
-          <a class="{% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">
-            {{ item.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <nav>
+      <ul class="mw-navigation">
+        {% for item in site.data.navigation.links %}
+          <li>
+            <a class="{% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
     <footer>
       <ul class="mw-social__links">
         {% for item in site.data.navigation.social %}
