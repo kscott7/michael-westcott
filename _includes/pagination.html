@@ -1,0 +1,9 @@
+<div class="mw-pagination text-center">
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}">&laquo; PREVIOUS</a>
+  {% endif %}
+  &nbsp; / &nbsp;
+  {% if page.next.url %}
+    <a href="{{page.next.url}}">NEXT &raquo;</a>
+  {% endif %}
+</div>
